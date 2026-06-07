@@ -2,11 +2,22 @@
 site: ah-sandbox
 page: holontology
 title: 超现实犯罪：复杂现实学异常犯罪几例
-revision: 26
+revision: 29
 ---
 [[include :scp-wiki-cn:theme:parallel]]
 
 [[module CSS]]
+:root {
+    --main-content-width: 60rem;
+}
+
+.yui-navset .yui-content,
+.yui-navset.yui-navset-top .yui-content {
+    padding: 0;
+    border: none;
+    background-color: rgb(var(--basalt-secondary-color));
+}
+
 a[name="top"] {
     position: relative;
     top: -15rem;
@@ -34,7 +45,7 @@ canvas#the-canvas {
 <script src="//hormress.github.io/SCP/library/pdf.js/build/pdf.mjs" type="module"></script>
 
 <script type="module">
-    var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
+    var url = 'https://hormress.github.io/SCP/normal/holontology/content.pdf';
     var { pdfjsLib } = globalThis;
 
     pdfjsLib.GlobalWorkerOptions.workerSrc = '//hormress.github.io/SCP/library/pdf.js/build/pdf.worker.mjs';
@@ -114,7 +125,7 @@ canvas#the-canvas {
   <a href="javascript:;" id="prev">上一页</a>
   <a href="javascript:;" id="next">下一页</a>
   <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-  <a href="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf" id="download" download>下载PDF</a>
+  <a href="https://hormress.github.io/SCP/normal/holontology/content.pdf" id="download" download>下载PDF</a>
 </div>
 
 <canvas id="the-canvas"></canvas>
