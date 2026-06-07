@@ -2,7 +2,7 @@
 site: ah-sandbox
 page: holontology
 title: 超现实犯罪：复杂现实学异常犯罪几例
-revision: 22
+revision: 23
 ---
 [[include :scp-wiki-cn:theme:parallel]]
 
@@ -31,7 +31,7 @@ canvas#the-canvas {
     margin-block: 1rem;
 }
 </style>
-<script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
+<script src="//hormress.github.io/SCP/library/pdf.mjs" type="module"></script>
 
 <script type="module">
     var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
