@@ -2,6 +2,129 @@
 site: ah-sandbox
 page: holontology
 title: 超现实犯罪：复杂现实学异常犯罪几例
-revision: 1
+revision: 22
 ---
-**事实1**
+[[include :scp-wiki-cn:theme:parallel]]
+
+[[module CSS]]
+a[name="top"] {
+    position: relative;
+    top: -15rem;
+}
+[[/module]]
+
+[[# top]]
+
+[[tabview]]
+[[tab HTML]]
+
+[[/tab]]
+[[tab PDF]]
+[[html]]
+<style>
+@import url('https://hormress.github.io/Parallel/normalize-min.css');
+@import url('https://hormress.github.io/Parallel/parallel-min.css');
+
+canvas#the-canvas {
+    width: 100%;
+    border: none;
+    margin-block: 1rem;
+}
+</style>
+<script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
+
+<script type="module">
+    var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
+    var { pdfjsLib } = globalThis;
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '//hormress.github.io/SCP/library/pdf.mjs';
+
+    var pdfDoc = null,
+        pageNum = 1,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 4,
+        canvas = document.getElementById('the-canvas'),
+        ctx = canvas.getContext('2d');
+
+    function renderPage(num) {
+        pageRendering = true;
+        pdfDoc.getPage(num).then(function(page) {
+            var viewport = page.getViewport({scale: scale});
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            var renderContext = {
+                canvasContext: ctx,
+                viewport: viewport
+            };
+            var renderTask = page.render(renderContext);
+            renderTask.promise.then(function() {
+                pageRendering = false;
+                if (pageNumPending !== null) {
+                    renderPage(pageNumPending);
+                    pageNumPending = null;
+                }
+            });
+        });
+
+        document.getElementById('page_num').textContent = num;
+        document.getElementById('page_num_bottom').textContent = num;
+    }
+
+    function queueRenderPage(num) {
+        if (pageRendering) {
+            pageNumPending = num;
+        } else {
+            renderPage(num);
+        }
+    }
+
+    function onPrevPage() {
+        if (pageNum <= 1) {
+            return;
+        }
+        pageNum--;
+        queueRenderPage(pageNum);
+    }
+    document.getElementById('prev').addEventListener('click', onPrevPage);
+    document.getElementById('prev_bottom').addEventListener('click', onPrevPage);
+
+    function onNextPage() {
+        if (pageNum >= pdfDoc.numPages) {
+            return;
+        }
+        pageNum++;
+        queueRenderPage(pageNum);
+    }
+    document.getElementById('next').addEventListener('click', onNextPage);
+    document.getElementById('next_bottom').addEventListener('click', onNextPage);
+
+    pdfjsLib.getDocument({ url }).promise.then(function(pdfDoc_) {
+        pdfDoc = pdfDoc_;
+        document.getElementById('page_count').textContent = pdfDoc.numPages;
+        document.getElementById('page_count_bottom').textContent = pdfDoc.numPages;
+        renderPage(pageNum);
+    });
+</script>
+
+<p>Please use <a href="https://mozilla.github.io/pdf.js/getting_started/#download"><i>official releases</i></a> in production environments.</p>
+
+<div id="menu_top" class="toolbar">
+  <a href="javascript:;" id="prev">上一页</a>
+  <a href="javascript:;" id="next">下一页</a>
+  <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+  <a href="https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf" id="download" download>下载PDF</a>
+</div>
+
+<canvas id="the-canvas"></canvas>
+
+<div id="menu_bottom" class="toolbar">
+  <a href="javascript:;" id="prev_bottom">上一页</a>
+  <a href="javascript:;" id="next_bottom">下一页</a>
+  <span>Page: <span id="page_num_bottom"></span> / <span id="page_count_bottom"></span></span>
+  <a href="//ah-sandbox.wikidot.com/holontology#top" target="_top">回到顶部</a>
+</div>
+[[/html]]
+[[/tab]]
+[[/tabview]]
