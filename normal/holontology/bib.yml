@@ -1,0 +1,91 @@
+structure:
+    type: Article
+    title: Advanced Field Theory of Holontology
+    author: ["Minovsky T Y", "Ionesco L"]
+    page-range: "114-122"
+    date: 2019
+    parent:
+        title: Nature Thaomatic
+        volume: 34
+        issue: 5
+
+strbook:
+    type: book
+    title: Structural Holontology
+    author: ["Minovsky T Y", "Ionesco L"]
+    date: 2019
+    publisher: Frühlinger
+    edition: 1
+
+rb:
+    type: article
+    title: Analysis of Reality Benders from the Perspective of Structural Holontology
+    author: ["Bednarčík K"]
+    page-range: "75-81"
+    date: 2020
+    parent:
+        title: Containment
+        volumn: 57
+        issue: 12
+
+thaum:
+    type: article
+    title: Novel Consciousness-Reality Coupling Phenomena in Thaumatological Processes
+    author: ["Ionesco L", "Ginzburg R"]
+    page-range: "43-57"
+    date: 2020
+    parent:
+        title: Nature Thaumatic
+        volumn: 35
+        issue: 3
+    
+guo:
+    type: article
+    title: 全球级广域基准现实结构的Caldmann法测绘
+    author: ["林亚远", "郭志宏", "陈斌", "许文娟"]
+    page-range: "35-57"
+    date: 2022
+    parent:
+        title: 超常科学进展
+        issue: 5
+
+chen1:
+    type: article
+    title: 非平凡现实结构测绘：以山城为例
+    author: ["张复兴", "陈一鸣", "季励波", "王海"]
+    page-range: "77-89"
+    date: 2022
+    parent:
+        title: 中国异常学报
+        issue: 11
+
+chen2:
+    type: article
+    title: 山城现实结构四个Liechtenberg态的完整复验
+    author: ["陈一鸣", "李尤", "张复兴", "王海"]
+    page-range: "51-63"
+    date: 2022
+    parent:
+        title: 中国异常学报
+        issue: 12
+
+chen3:
+    type: article
+    title: Frankhoff方法现实测绘的验证与实践
+    author: ["张复兴", "王海", "陈一鸣"]
+    page-range: "44-51"
+    date: 2020
+    parent:
+        title: 超常科学进展
+        issue: 7
+
+shan:
+    type: article
+    title: 山城现实结构初探
+    author: ["赵龙", "胡庆峰", "葛栎", "et al"]
+    page-range: "12-20"
+    date: 2011
+    parent:
+        title: "Acta Paraphys. Sin."
+        volume: 17
+        issue: 9

@@ -2,44 +2,208 @@
 site: ah-sandbox
 page: holontology
 title: 超现实犯罪：复杂现实学异常犯罪几例
-revision: 29
+revision: 95
 ---
 [[include :scp-wiki-cn:theme:parallel]]
 
 [[module CSS]]
 :root {
+    --header-logo: url("//hormress.github.io/SCP/image/logo/goi/[G]FROW_Holontology.svg");
+    --header-logo-mask: none;
+    --title: "";
+    --subtitle: "";
     --main-content-width: 60rem;
+
+
+    --top-bar-link-color: var(--basalt-main-text-color);
+    --header-color-one: var(--basalt-secondary-color);
+    --header-color-two: var(--basalt-secondary-color);
+}
+
+#header h1 a::before {
+    width: 12rem;
+}
+
+#top-bar div.top-bar > ul {
+    justify-content: end;
+    margin-right: 4rem;
+}
+
+/* 页面布局 */
+
+div#main-content {
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+div#page-title {
+    display: none;
+}
+
+div#page-title,
+div.meta-title {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: "Noto Serif SC", serif;
+}
+
+div#page-options-container,
+div#action-area {
+    width: var(--main-content-width);
+    margin: 0 auto var(--main-content-bottom-margin);
+    max-width: calc(100% - var(--main-content-side-margin) *2);
+}
+
+div#page-content + div.page-tags {
+    width: var(--main-content-width);
+    margin: 0 auto;
+}
+
+div#license-area::before {
+    content: "《完全现实》是FROW出版集团旗下的中文奇术学与现实学期刊，投稿咨询请联系holonreality@rj.frow\A编辑部地址：杭州市钱塘区经济技术开发区《完全现实》编辑部，邮编：310018";
+    display: block;
+    height: auto;
+    margin-top: 0.8rem;
+    color: rgb(var(--basalt-main-text-color));
+    background-color: transparent;
+    text-align: center;
+    white-space: pre-wrap;
+    clip-path: none;
+    mask-image: none;
+    -webkit-clip-path: none;
+    -webkit-mask-image: none;
+}
+
+/* 页面内容元素 */
+
+div.normal-content {
+    width: var(--main-content-width);
+    max-width: calc(100% - var(--main-content-side-margin) * 2) !important;
+    margin-inline: auto;
+}
+
+div.hor {
+    height: 5rem;
+}
+
+div.hors {
+    height: 2rem;
+}
+
+.yui-navset.yui-navset-top > ul.yui-nav li,
+.yui-navset > ul.yui-nav li {
+    flex-grow: unset;
 }
 
 .yui-navset .yui-content,
 .yui-navset.yui-navset-top .yui-content {
-    padding: 0;
+    padding: 0rem;
     border: none;
     background-color: rgb(var(--basalt-secondary-color));
 }
 
-a[name="top"] {
-    position: relative;
-    top: -15rem;
+#page-title {
+    display: none;
 }
 [[/module]]
 
+[[div class="normal-content"]]
+
+[[div class="pseudocrumbs" style="margin-top: 1.5rem;"]]
+**文章导航** >> [# 完全现实] >> [# 2025] >> [# 67(10)]: 100331 >> DOI: [# 11.3930/hr.67.20250554]
+[[/div]]
+
+[[div class="blockquote w-full" style="margin-top: 0;"]]
+
+**引用本文：**刘耀辰, 张蒙韵, 二阶堂晓, 王华. 超现实犯罪：复杂现实学异常犯罪几例[J]. 完全现实, 2025, 67(10): 100331. DOI: 11.3930/hr.67.20250554
+
+**Citation:** LIU Yaochen, ZHANG Mengyun, NIKAIDÔ Akira, WANG Hua. Surreal Crimes: Several Examples of Complicated Holontological Anomalous Crimes[J]. //Holonreality//, 2025, 67(10): 100331. DOI: 11.3930/hr.67.20250554
+
+----
+
+[[size 125%]]**超现实犯罪：复杂现实学异常犯罪几例**[[/size]]
+
+刘耀辰^^1,[[span class="fa-envelope" style="font-family: 'fontAwesome';"]][[size 0%]]@@ @@[[/size]][[/span]]^^，张蒙韵^^2,3^^，二阶堂晓^^3^^，王华^^4^^
+
+# SCP基金会中国分部七号区域第二研究所
+# 联合国全球超自然联盟远东分部奇术事务部门
+# 联合国全球超自然联盟远东现实学与奇术学研究所
+# 异常事务局刑事司
+
+[[size 110%]]**Surreal Crimes: Several Examples of Complicated Holontological Anomalous Crimes**[[/size]]
+
+LIU Yaochen^^1,[[span class="fa-envelope" style="font-family: 'fontAwesome';"]][[size 0%]]@@ @@[[/size]][[/span]]^^, ZHANG Mengyun^^2,3^^, NIKAIDÔ Akira^^3^^, WANG Hua^^4^^
+
+# 2^^nd^^ Research Institute, Area-CN-07, SCP Foundation
+# Department of Thaumatology Affairs, Far East Branch, UNGOC
+# Research Institute of Holontology and Thaumatology in Far East, UNGOC
+# Criminal Division, MSS Bureau of Anomalous Affairs
+[[/div]]
+
 [[# top]]
 
+[[>]]
+[[module rate]]
+[[/>]]
+
+[[/div]]
+
+[[div class="blockquote w-full" style="--_max-width: 100%; padding: 0;"]]
+[[div class="normal-content"]]
+
 [[tabview]]
-[[tab HTML]]
+[[tab 摘要]]
+
+[[div class="hors"]]
+[[/div]]
+[[div class="blockquote w-875 b-n"]]
+
++++* 摘要
+
+本研究以现实学分析的视角，对2014至2024年间的6次典型异常犯罪案例进行了重新审视，发现这些犯罪者在作案过程中对现实学效应有意或无意的运用，并利用一系列模拟实验加以实证，为这些案例的复杂现实学背景进行了建模。本研究为从现实学角度防范异常影响提供参考，并给出了异常犯罪调查的新方向。
+
+**关键词：**[# 现实学]；[# 异常犯罪]
+
+[[div class="hors"]]
+[[/div]]
+
++++* Abstract
+
+Holontological analysis methods have received great attentions in researches of anomalous crimes. Here, we reviewed 6 typical anomalous crime cases between 2014 and 2024 from a holontological perspective, revealing the intentional or unintentional exploitation of holontological effects by the perpetrators during their crimes. Through a series of simulation experiments, we provide empirical evidence and construct models for the complicated holontological backgrounds of these cases. This study provides a reference of preventing anomalous effects from a holontological standpoint and suggests new directions for the investigations of anomalous crimes.
+
+//**Keywords**//　[# holontology]; [# anomalous crime]
+
+[[/div]]
+[[div class="hors"]]
+[[/div]]
 
 [[/tab]]
-[[tab PDF]]
+[[tab HTML全文]]
+
+[[/tab]]
+[[tab PDF全文]]
 [[html]]
 <style>
 @import url('https://hormress.github.io/Parallel/normalize-min.css');
 @import url('https://hormress.github.io/Parallel/parallel-min.css');
 
 canvas#the-canvas {
+    display: block;
     width: 100%;
     border: none;
-    margin-block: 1rem;
+    margin: 0 auto;
+}
+
+div.toolbar {
+    display: grid;
+    height: 2rem;
+    margin: 0.5rem 0;
+    grid-template-columns: 3rem 3rem 1fr 6rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 </style>
 <script src="//hormress.github.io/SCP/library/pdf.js/build/pdf.mjs" type="module"></script>
@@ -119,12 +283,10 @@ canvas#the-canvas {
     });
 </script>
 
-<p>Please use <a href="https://mozilla.github.io/pdf.js/getting_started/#download"><i>official releases</i></a> in production environments.</p>
-
 <div id="menu_top" class="toolbar">
   <a href="javascript:;" id="prev">上一页</a>
   <a href="javascript:;" id="next">下一页</a>
-  <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+  <span>第 <span id="page_num"></span> / <span id="page_count"></span> 页</span>
   <a href="https://hormress.github.io/SCP/normal/holontology/content.pdf" id="download" download>下载PDF</a>
 </div>
 
@@ -133,9 +295,12 @@ canvas#the-canvas {
 <div id="menu_bottom" class="toolbar">
   <a href="javascript:;" id="prev_bottom">上一页</a>
   <a href="javascript:;" id="next_bottom">下一页</a>
-  <span>Page: <span id="page_num_bottom"></span> / <span id="page_count_bottom"></span></span>
+  <span>第 <span id="page_num_bottom"></span> / <span id="page_count_bottom"></span> 页</span>
   <a href="//ah-sandbox.wikidot.com/holontology#top" target="_top">回到顶部</a>
 </div>
 [[/html]]
 [[/tab]]
 [[/tabview]]
+
+[[/div]]
+[[/div]]
