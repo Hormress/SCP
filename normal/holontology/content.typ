@@ -2,7 +2,7 @@
 #import "@preview/lilaq:0.6.0" as lq
 
 #set text(
-    font: ((name: "CMU Serif", covers: "latin-in-cjk"), "Source Han Serif"),
+    font: ((name: "STIX Two Text", covers: "latin-in-cjk"), "Source Han Serif"),
     weight: 300,
     size: 10.5pt,
     lang: "zh"
@@ -22,7 +22,7 @@
 )
 
 #show strong: set text(
-    font: ((name: "CMU Serif", covers: "latin-in-cjk"), "Source Han Sans"),
+    font: ((name: "STIX Two Text", covers: "latin-in-cjk"), "Source Han Sans"),
     weight: 500
 )
 
@@ -44,7 +44,7 @@
     )
 
     set text(
-        font: ((name: "CMU Serif", covers: "latin-in-cjk"), "Source Han Sans")
+        font: ((name: "STIX Two Text", covers: "latin-in-cjk"), "Source Han Sans")
     )
     
     it
@@ -67,7 +67,7 @@
 )
 
 #show <en>: set text(
-    font: "CMU Serif"
+    font: "STIX Two Text"
 )
 
 #show <en>: set par(
@@ -88,6 +88,10 @@
 
 #show bibliography: set text(
     size: 8.5pt
+)
+
+#show math.equation: set text(
+    font: ("STIX Two Math", "Source Han Serif"),
 )
 
 #let parencite(key, ..args) = [
@@ -165,13 +169,13 @@
 #align(center)[
 
     #par(leading: 0.1em)[
-        #text(size: 20pt, weight: 700, font: "CMU Serif")[
+        #text(size: 20pt, weight: 700, font: "STIX Two Text")[
             SURREAL CRIMES
         ]
     ]
 
     #par(leading: 0.1em)[
-        #text(size: 13pt, weight: 700, font: "CMU Serif")[
+        #text(size: 13pt, weight: 700, font: "STIX Two Text")[
             Several Examples of Complicated Holontological Anomalous Crimes
         ]
     ]
