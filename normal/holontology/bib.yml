@@ -89,3 +89,14 @@ shan:
         title: "Acta Paraphys. Sin."
         volume: 17
         issue: 9
+
+cheng:
+    type: article
+    title: 太赫兹频率现实结构表征中的准粒子稳态
+    author: ["程皓宇", "黄鸿", "文晓波", "et al"]
+    page-range: "4-7"
+    date: 2020
+    parent:
+        title: 完全现实
+        volume: 6
+        issue: 3
