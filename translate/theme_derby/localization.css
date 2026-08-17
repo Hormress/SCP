@@ -10,10 +10,6 @@ body {
     font-size: 0.95rem;
 }
 
-#login-status .printuser::before {
-    content: "训练员：";
-}
-
 #search-top-box-input {
     display: none;
 }
@@ -115,4 +111,14 @@ div.page-rate-widget-box.rate-box-with-credit-button::after {
 #page-content h1::before {
     top: -3px;
     font-family: "Oswald", sans-serif;
+}
+
+/* 文本本地化 */
+
+#login-status .printuser::before {
+    content: "训练员：";
+}
+
+div#owindow-1 .title.modal-header::before {
+    content: "训练员名片";
 }
