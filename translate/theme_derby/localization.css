@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..700&display=swap");
+@import url("https://fontsapi.zeoseven.com/642/main/result.css");
+
+:root {
+    --oswa: "Oswald", "ChillDINGothic";
+    --open: "Open Sans", "Noto Sans SC";
+}
+
+body {
+    font-size: 0.95rem;
+}
+
+#login-status .printuser::before {
+    content: "训练员：";
+}
+
+#search-top-box-input {
+    display: none;
+}
+
+#login-status::after,
+#search-top-box-form::after {
+    height: 100%;
+}
+
+/* 侧边栏 */
+
+:is(#side-bar, #interwiki) .side-block:not(.media):not(.license) div.menu-item img {
+    display: none;
+}
+
+:is(#side-bar, #interwiki) .side-block {
+    background-color: var(--white) !important;
+}
+
+:is(#side-bar, #interwiki) .side-block .heading:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+}
+
+#side-bar .collapsible-block {
+    margin: 0;
+}
+
+#side-bar .collapsible-block-folded {
+    background-image: none;
+    text-align: center;
+    padding: 10px;
+}
+
+#side-bar .collapsible-block-link {
+    margin: 5px 0;
+    background-color: transparent;
+    border: none;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    color: var(--black);
+    border: none;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    padding: 2px 10px;
+    background-color: var(--green);
+    background-image:
+     radial-gradient(var(--white) 30%, transparent 30%),
+     radial-gradient(var(--grey) 30%, transparent 30%);
+    background-position: 0 0, 1px 1px;
+    background-size: 2px 2px;
+    font-style: italic;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    margin: 0 -5px;
+    font-size: 0.9em;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: var(--white);
+}
+
+/* 评分模块 */
+
+div.rate-box-with-credit-button div.page-rate-widget-box,
+div.creditButton {
+    border-radius: 0 3px 3px 0;
+    background-color: var(--sp_rate-module-background);
+    padding-left: 2rem;
+}
+
+div.rate-box-with-credit-button {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+div.creditButton {
+    padding-left: 0;
+    margin-inline-start: 10px;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+}
+
+div.creditButton p a {
+    border-inline-start: none;
+}
+
+div.page-rate-widget-box.rate-box-with-credit-button {
+    padding-left: 0;
+    filter: none;
+}
+
+div.page-rate-widget-box.rate-box-with-credit-button::after {
+    display: none;
+}
+
+/* 排版元素 */
+
+#page-content h1::before {
+    top: -3px;
+    font-family: "Oswald", sans-serif;
+}

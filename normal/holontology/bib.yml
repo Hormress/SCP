@@ -100,3 +100,33 @@ cheng:
         title: 完全现实
         volume: 6
         issue: 3
+
+lorenz:
+    type: article
+    title: A Novel Metric for Non-Linear Reality Distortion
+    author: ["Lorenz F"]
+    date: 1964
+    parent:
+        title: Containment
+        volume: 14
+        issue: 1
+
+rzewski:
+    type: article
+    title: Self-Stabilizing Cross-Reality Differences in the Fine-Structure Constant $alpha$
+    author: ["Rzewski C"]
+    date: 1977
+    parent:
+        title: Containment
+        volume: 27
+        issue: 4
+
+caldmann:
+    type: article
+    title: Definition of Absolute Reality Strength
+    author: ["Caldmann J", "Rzewski C"]
+    date: 1983
+    parent:
+        title: Containment
+        volume: 32
+        issue: 2
