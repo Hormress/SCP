@@ -26,13 +26,15 @@ body {
 #header {
     background-image: url("https://hormress.github.io/SCP/translate/theme_derby/logo.svg");
     background-size: min(35vw, 300px);
-    background-position: 0 45%;
+    background-position: 15% 45%;
 }
 
 #header h1 a::before {
     width: min(35vw, 300px);
     height: min(18vw, 160px);
-    top: 35%;
+    top: 45%;
+    left: 15%;
+    transform: translate(-15%, -45%);
 }
 
 /* 侧边栏 */
