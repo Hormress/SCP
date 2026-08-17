@@ -2,6 +2,8 @@
 @import url("https://fontsapi.zeoseven.com/642/main/result.css");
 
 :root {
+    --header-title: "马娘";
+    --header-subtitle: "甜心德比";
     --oswa: "Oswald", "ChillDINGothic";
     --open: "Open Sans", "Noto Sans SC";
 }
@@ -10,6 +12,8 @@ body {
     font-size: 0.95rem;
 }
 
+/* 顶部导航 */
+
 #search-top-box-input {
     display: none;
 }
@@ -17,6 +21,18 @@ body {
 #login-status::after,
 #search-top-box-form::after {
     height: 100%;
+}
+
+#header {
+    background-image: url("https://hormress.github.io/SCP/translate/theme_derby/logo.svg");
+    background-size: min(35vw, 300px);
+    background-position: 0 45%;
+}
+
+#header h1 a::before {
+    width: min(35vw, 300px);
+    height: min(18vw, 160px);
+    top: 35%;
 }
 
 /* 侧边栏 */
