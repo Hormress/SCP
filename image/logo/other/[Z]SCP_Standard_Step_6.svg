@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="SCP_Logo" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2500 2500"
+	 style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.6;}
+	.st1{fill:none;stroke:#907F7F;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:120;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:80;stroke-miterlimit:10;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="2503" width="2503" x="-1.5" y="-1.5"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g class="st0">
+	<polygon class="st1" points="738.9663696,954.9545898 952.5,200 1547.5,200 1761.0336914,954.9545898 	"/>
+	<circle class="st1" cx="1250" cy="1250" r="950"/>
+	<circle class="st1" cx="1250" cy="1250" r="1250"/>
+	<polygon class="st1" points="1250,1840.0908203 489.4233398,2032.6425781 191.9233246,1517.3574219 738.9663086,954.9545288 	"/>
+	<polygon class="st1" points="1761.0335693,954.9545288 2308.0766602,1517.3572998 2010.5767822,2032.6424561 1250,1840.0908203 	
+		"/>
+</g>
+<polygon points="1250,960 1125,960 1250,1210 1375,960 "/>
+<circle class="st2" cx="1250" cy="1250" r="590"/>
+<line class="st3" x1="1250" y1="960" x2="1250" y2="510"/>
+<polygon points="998.8526611,1395 1061.3526611,1503.2531738 1215.3590088,1270 936.3526611,1286.7468262 "/>
+<line class="st3" x1="998.8526611" y1="1395" x2="609.1411743" y2="1620"/>
+<polygon points="1501.1473389,1395 1563.6473389,1286.7468262 1284.6409912,1270 1438.6473389,1503.2531738 "/>
+<line class="st3" x1="1501.1473389" y1="1395" x2="1890.8587646" y2="1620"/>
+<path class="st3" d="M2308.0766602,1517.3574219L2189.010498,1394.947998C2196.2456055,1347.6884766,2200,1299.2827148,2200,1250
+	c0-403.3684082-251.4023438-748.0048828-606.0596924-885.809082L1547.5,200h-595l-46.4403076,164.190918
+	C551.4022827,501.9951172,300,846.6315918,300,1250c0,49.2827148,3.7542725,97.6884766,10.989502,144.9481201
+	l-119.0661621,122.4093018l297.5,515.2851563l165.666687-41.9411621C817.907959,2121.6394043,1024.802002,2200,1250,2200
+	s432.0921631-78.3605957,594.9101563-209.298584l165.666626,41.94104L2308.0766602,1517.3574219z"/>
+</svg>

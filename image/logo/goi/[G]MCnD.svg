@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="图层_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 65 30"
+	 style="enable-background:new 0 0 65 30;" xml:space="preserve">
+<style type="text/css">
+	.投影{fill:none;}
+	.圆角_x0020_2_x0020_pt{fill:#FFFFFF;stroke:#231815;stroke-miterlimit:10;}
+	.实时对称_x0020_X{fill:none;}
+	.柔化斜面{fill:url(#SVGID_1_);}
+	.黄昏{fill:#FFFFFF;}
+	.植物_GS{fill:#FFE100;}
+	.高卷式发型_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#4CACE2;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="24" width="57" x="4" y="-39"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-10" x2="0.7071043" y2="-9.2928905">
+	<stop  offset="0" style="stop-color:#E6E7EA"/>
+	<stop  offset="0.1746906" style="stop-color:#E2E3E6"/>
+	<stop  offset="0.3537763" style="stop-color:#D6D7DA"/>
+	<stop  offset="0.5349318" style="stop-color:#C1C4C5"/>
+	<stop  offset="0.7174437" style="stop-color:#A4A8A8"/>
+	<stop  offset="0.8993385" style="stop-color:#808584"/>
+	<stop  offset="1" style="stop-color:#686E6C"/>
+</linearGradient>
+<path d="M18,7l3-2v18l-3,2V9c-4,3-4,10-4,10v4l-3,2v-4C11,13,15,9,18,7z M14,7V5l-3,2c-3,2-7,6-7,14v4l3-2v-4c0,0,0-7,4-10L14,7z
+	 M23,21v4c4-2,7,0,7,0l3-2c0,0-1-1-4-1c-1.0430298,0-2.0830688,0.3653564-3,0.8384399V19c0,0,0-7,4-10l3-2V5l-3,2C27,9,23,13,23,21z
+	 M61,5v4c0,8-4,12-7,14l-3,2V7l3-2C54,5,57,7,61,5z M58,7.1615601C57.0830688,7.6346436,56.0430298,8,55,8
+	c-0.3629761,0-0.6938477-0.0158081-1-0.0415649V21c4-3,4-10,4-10V7.1615601z M50,16c0,0-1.2796021,1.2738647-3,2.1615601V27l-3,2
+	v-5.333313L42,25c0,0-3-2-7,0v-4c0-8,4-12,7-14l3-2v5c0,0-0.0103149,3.6544189-1.9016113,6.0594482
+	C43.6271362,16.3687134,46.4060669,17.7969971,50,16z M44,19c-3,0-4-1-4-1l0.0592041-0.0394897
+	C40.3799438,17.7299805,42,16.2105103,42,9c-4,3-4,10-4,10v3.8384399C38.9169312,22.3653564,39.9569702,22,41,22
+	c1.4133301,0,2.369873,0.2228394,3,0.4575806V19z"/>
+</svg>

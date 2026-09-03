@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="图层_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 498 102"
+	 style="enable-background:new 0 0 498 102;" xml:space="preserve">
+<style type="text/css">
+	.投影{fill:none;}
+	.圆角_x0020_2_x0020_pt{fill:#FFFFFF;stroke:#231815;stroke-miterlimit:10;}
+	.实时对称_x0020_X{fill:none;}
+	.柔化斜面{fill:url(#SVGID_1_);}
+	.黄昏{fill:#FFFFFF;}
+	.植物_GS{fill:#FFE100;}
+	.高卷式发型_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#4CACE2;}
+	.st0{fill:#BC1E14;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="84" width="466" x="16" y="-96"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0.7071043" y2="0.7071093">
+	<stop  offset="0" style="stop-color:#E6E7EA"/>
+	<stop  offset="0.1746906" style="stop-color:#E2E3E6"/>
+	<stop  offset="0.3537763" style="stop-color:#D6D7DA"/>
+	<stop  offset="0.5349318" style="stop-color:#C1C4C5"/>
+	<stop  offset="0.7174437" style="stop-color:#A4A8A8"/>
+	<stop  offset="0.8993385" style="stop-color:#808584"/>
+	<stop  offset="1" style="stop-color:#686E6C"/>
+</linearGradient>
+<path class="st0" d="M114,48h16l10-8h-10h-16c0,0-8,0-8-8s8-8,8-8h16l10-8h-10h-16c0,0-18,0-18,16S114,48,114,48z"/>
+<path class="st0" d="M162,24h-4c0,0-14,0-14,12s14,12,14,12h4c0,0,14,0,14-12S162,24,162,24z M162,40h-4c0,0-4,0-4-4s4-4,4-4h4
+	c0,0,4,0,4,4S162,40,162,40z"/>
+<path class="st0" d="M224,36c0,0,0-4,4-4h4c4,0,4,4,4,4v12h10V36c0-12-14-12-14-12h-4c0,0-5.8272095,0.005127-9.9628296,3.2297363
+	L214,24v24h10V36z"/>
+<path class="st0" d="M184.0371704,27.2297363L180,24v24h10V36c0,0,0-4,4-4h8l10-8h-18
+	C194,24,188.1727905,24.005127,184.0371704,27.2297363z"/>
+<path class="st0" d="M264,48h8l10-8h-14h-4c-4,0-4-4-4-4s0-4,4-4h4v8l10-8v-8h-14c0,0-14,0-14,12S264,48,264,48z"/>
+<path class="st0" d="M294,36c0,0,0-4,4-4h8l10-8h-18c0,0-5.8272095,0.005127-9.9628296,3.2297363L284,24v24h10V36z"/>
+<path class="st0" d="M330,32h4l10-8h-14c0,0-14,0-14,12c0,0,0,4-4,4h-4l-10,8h14c0,0,14,0,14-12C326,36,326,32,330,32z"/>
+<path class="st0" d="M340,32h12v4c0,12,14,12,14,12l10-8h-10c-4,0-4-4-4-4v-4h4l10-8h-14v-4l-10-8v12h-2L340,32z"/>
+<path class="st0" d="M396,24h-4c0,0-14,0-14,12s14,12,14,12h4c0,0,14,0,14-12S396,24,396,24z M396,40h-4c0,0-4,0-4-4s4-4,4-4h4
+	c0,0,4,0,4,4S396,40,396,40z"/>
+<path class="st0" d="M432,24h-4c0,0-5.8272095,0.005127-9.9628296,3.2297363L414,24v24h10V36c0,0,0-4,4-4h4c4,0,4,4,4,4v12h10V36
+	C446,24,432,24,432,24z"/>
+<path class="st0" d="M468,40h-4c-4,0-4-4-4-4s0-4,4-4h4V40l10-8v-8h-14c0,0-14,0-14,12s14,12,14,12h8l10-8H468z"/>
+<path class="st0" d="M140,70c0-16-18-16-18-16h-22l-10,8h16h16c0,0,8,0,8,8s-8,8-8,8h-16V62l-10,8v16h26C122,86,140,86,140,70z"/>
+<path class="st0" d="M198,62h-4c0,0-5.8272095,0.005127-9.9628296,3.2297363L180,62v24h10V74c0,0,0-4,4-4h4c4,0,4,4,4,4v12h10V74
+	C212,62,198,62,198,62z"/>
+<path class="st0" d="M166,74c0,0,0,4-4,4h-4c-4,0-4-4-4-4V62h-10v12c0,12,14,12,14,12h4c0,0,1.5894775-0.0020142,3.6948853-0.460022
+	C165.2825928,86.6672974,164.3101807,88,162,88h-18l-10,8h28c0,0,14,0,14-12V62h-10V74z"/>
+<path class="st0" d="M234,62h-4c0,0-14,0-14,12s14,12,14,12h4c0,0,5.8272095-0.005127,9.9628296-3.2297363L248,86V74
+	C248,62,234,62,234,62z M234,78h-4c0,0-4,0-4-4s4-4,4-4h4c0,0,4,0,4,4S234,78,234,78z"/>
+<path class="st0" d="M292,62h-4c0,0-4.9801636,0.0016479-9,2.5481567C274.9801636,62.0016479,270,62,270,62h-4
+	c0,0-5.8272095,0.005127-9.9628296,3.2297363L252,62v24h10V74c0,0,0-4,4-4h4c4,0,4,4,4,4v12h10V74c0,0,0-4,4-4h4c4,0,4,4,4,4v12h10
+	V74C306,62,292,62,292,62z"/>
+<polygon class="st0" points="310,78 320,86 320,62 310,62 "/>
+<path class="st0" d="M368,74c0,0,0,4-4,4h-4l-10,8h14c0,0,14,0,14-12c0,0,0-4,4-4h4l10-8h-14C382,62,368,62,368,74z"/>
+<path class="st0" d="M338,78c0,0-4,0-4-4s4-4,4-4h8l10-8h-18c0,0-14,0-14,12s14,12,14,12h6l10-8H338z"/>
+<g>
+	<path class="st0" d="M77,86h9v-8C86,86,77,86,77,86z"/>
+	<path class="st0" d="M16,16v70h34c0,0-9,0-9-8s9-8,9-8h8h5l-5,4h-8c0,0-4,0-4,4s4,4,4,4h8h5l-5,4h6v-8l5-4h-8l5-4h11c0,0,9,0,9,8
+		V16H16z"/>
+	<path class="st0" d="M77,82c0,0,4,0,4-4s-4-4-4-4h-8v8H77z"/>
+</g>
+</svg>

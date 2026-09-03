@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="图层_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 180"
+	 style="enable-background:new 0 0 400 180;" xml:space="preserve">
+<style type="text/css">
+	.投影{fill:none;}
+	.圆角_x0020_2_x0020_pt{fill:#FFFFFF;stroke:#231815;stroke-miterlimit:10;}
+	.实时对称_x0020_X{fill:none;}
+	.柔化斜面{fill:url(#SVGID_1_);}
+	.黄昏{fill:#FFFFFF;}
+	.植物_GS{fill:#FFE100;}
+	.高卷式发型_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#4CACE2;}
+	.st0{fill:#036EB8;}
+	.st1{fill:#E61673;}
+	.st2{fill:#57576B;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="180" width="400" x="0" y="-180"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0.7071043" y2="0.7071093">
+	<stop  offset="0" style="stop-color:#E6E7EA"/>
+	<stop  offset="0.1746906" style="stop-color:#E2E3E6"/>
+	<stop  offset="0.3537763" style="stop-color:#D6D7DA"/>
+	<stop  offset="0.5349318" style="stop-color:#C1C4C5"/>
+	<stop  offset="0.7174437" style="stop-color:#A4A8A8"/>
+	<stop  offset="0.8993385" style="stop-color:#808584"/>
+	<stop  offset="1" style="stop-color:#686E6C"/>
+</linearGradient>
+<g>
+	<path class="st0" d="M133.0529785,150H60v-50h50.5865479C110.2227783,96.7126465,110,93.3843994,110,90
+		c0-6.8835449,0.8435059-13.55896,2.3071289-20H60V30h73.0523682C149.5300293,11.6271973,173.3776855,0,200,0H0v180h200
+		C173.3782959,180,149.5306396,168.3728027,133.0529785,150z"/>
+	<path class="st1" d="M400,30V0H200c49.7058105,0,90,40.2941895,90,90c0,49.7052002-40.2941895,90-90,90h140v-80h40V70h-40V30H400z"
+		/>
+	<g>
+		<path class="st2" d="M207.0710754,97.0710678c7.810791-7.8107986,20.4738922-7.8103714,28.2842712,0
+			c7.8103638,7.8103714,7.810791,20.4734726,0,28.2842712c-19.5261536,19.5261459-51.1845398,19.5261459-70.7106934,0
+			c-7.9161072-7.9161072-12.4542084-17.8412399-13.9517975-28.1284714
+			C166.3278351,112.6710968,191.5094604,112.6326828,207.0710754,97.0710678z"/>
+		<path class="st2" d="M192.9289246,82.9289322c-7.810791,7.8107986-20.4738922,7.8103714-28.2842712,0
+			c-7.8103638-7.8103714-7.810791-20.4734688,0-28.2842712c19.5261536-19.5261421,51.1845398-19.5261421,70.7106934,0
+			c7.9161072,7.9161072,12.4542084,17.8412399,13.9517975,28.1284714
+			C233.6721649,67.3289032,208.4905396,67.3673172,192.9289246,82.9289322z"/>
+	</g>
+</g>
+</svg>
