@@ -1,0 +1,515 @@
+---
+site: ah-sandbox
+page: collab:departments-cn
+title: 基金会部门-CN
+tags:
+  - 中心
+  - 原创
+  - 合著
+  - 资源
+revision: 154
+---
+[[include :scp-wiki-cn:component:sigma-plus]]
+[[include :scp-wiki-cn:component:toggle-sidebar]]
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+
+:root {
+    --shadow: 0 0 0.2rem rgb(20, 20, 20, 0.4);
+}
+
+div#content-wrap,
+div#main-content {
+    max-width: unset;
+    width: auto;
+    margin: 0;
+}
+
+div#header {
+    box-shadow: 0 1rem 3rem rgb(20, 20, 20, 0.1);
+}
+
+div#search-top-box {
+    display: none;
+}
+
+div#top-bar {
+    box-shadow: var(--shadow);
+}
+
+div#page-title {
+    display: none;
+}
+
+div.meta-title {
+    font-family: "Noto Sans SC", sans-serif;
+    margin-top: 1.5rem;
+}
+
+div#page-content {
+    font-size: 0.9375rem;
+    font-family: "Noto Sans SC", sans-serif;
+    line-height: 160%;
+}
+
+textarea, input, tt, code {
+    font-family: "Fira Code", "Noto Sans SC", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+h1 {
+    color: inherit;
+    margin-top: 3rem;
+    font-size: 160%;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+div.page-rate-widget-box {
+    box-shadow: var(--shadow);
+}
+
+:is(table, tbody, tr, td):has(div#toc) {
+    display: contents;
+}
+
+div#toc {
+    margin-inline: auto;
+    padding: 0.5rem 1rem;
+    background-color: rgb(254, 254, 254);
+    border: solid 0.2rem rgb(254, 254, 254);
+    border-radius: 0.5rem;
+    box-shadow: inset var(--shadow);
+}
+
+div.panel {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1.5rem;
+    color: rgb(var(--_color, 20, 20, 20));
+    background-color: rgb(var(--_bg-color, 254, 254, 254));
+    border: solid 0.2rem rgb(var(--_border-color, 254, 254, 254));
+    border-radius: var(--_radius);
+    box-shadow: var(--shadow);
+    --_radius: 0.5rem;
+}
+
+div.panel a:any-link:not(.newpage) {
+    color: rgb(var(--_link-color, 176, 0, 16));
+}
+
+div.panel div.logo {
+    float: right;
+    position: relative;
+    margin: 1rem 0rem 1.5rem 1.5rem;
+    padding-left: 1.5rem;
+    width: 8rem;
+    min-height: 8rem;
+    text-align: center;
+    align-content: center;
+}
+
+div.panel div.logo::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0.2rem;
+    height: 100%;
+    border-radius: min(0.1rem, var(--_radius));
+    background-color: rgb(var(--_border-color, 244, 244, 244));
+}
+
+@media not all and (max-width: 767px) {
+    div#page-content div.normal-content,
+    div#page-options-container,
+    div#action-area,
+    div#main-content > div.page-tags {
+        max-width: 44.5rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    div#page-content div.normal-content,
+    div#page-options-container,
+    div#action-area,
+    div#main-content > div.page-tags {
+        max-width: 90%;
+        margin: 0 5%;
+        padding: 0;
+    }
+
+    div.panel div.logo {
+        float: none;
+        margin-inline: auto;
+        padding-left: 0;
+        padding-bottom: 1rem;
+    }
+
+    div.panel div.logo::before {
+        top: unset;
+        bottom: 0;
+        width: 100%;
+        height: 0.2rem;
+    }
+}
+[[/module]]
+
+[[div class="normal-content"]]
+
+[[div class="meta-title"]]
+基金会部门-CN
+[[/div]]
+
+[[=]]
+[[module rate]]
+[[/=]]
+
+[[div class="panel"]]
+
+[[image https://hormress.github.io/SCP/image/logo/other/[Z]Departments_CN.svg style="display: block; width: 8rem; margin: 1rem auto;"]]
+
+[[=]]
+++* 中国分部基金会部门
+[[/=]]
+
+**文件概览：**SCP基金会是一个规模庞大的组织，其对异常的控制、收容、保护工作经常需要多个专业部门相互协作，一些部门在整个基金会中设置，另一些则在某些基金会设施单独设立。SCP基金会中国分部具有相对独立的管理架构和独特的地缘、工作环境，因此也设立了不少与国际分部相异的下属部门。
+
+此页面主要列出SCP基金会中国分部特有的部门，一些国际分部基金会部门在中国分部相对独立的分支和中文地区活跃的部门也会列出。此页面并不追求列出所有此类机构，而是选择相对具有代表性的进行收录，一般收录在基金会各类资料中被提及五次以上的部门。
+
+[[toc]]
+
+[[=]]
+来自其他语言的同类页面
+
+[[[departments|EN]]] - [[[list-of-foundation-s-internal-departments|RU]]] - [[[departments-jp|JP]]] - [[[departments-ko|KO]]] - [[[departements-fr|FR]]][[footnote]][[[departements-francais|好像有什么不对……？]]][[/footnote]]
+[[/=]]
+
+[[/div]]
+
++ 行政管理
+
+[[div class="panel"]]
+[[div class="logo"]]
+**[图片已编辑]**
+[[/div]]
+++ 十二生肖议会
+
+**概述：**十二生肖议会，于部分资料中又称O5-CN议会，据信是SCP基金会中国分部的最高管理机构。资料声称议会成员具有中国分部最高权限，有权调阅中国分部的一切机密资料，负责整个分部各类事务的最终决策。
+
+议会成员几乎从未公开露面，关于这一机构的资料真实性同样无法得到确认。在各种叙述中得到最广泛公认的信息是，议会成员共有十二人，以中国传统十二生肖为代号活动。
+
+**提及：**
+
+* [[[SCP-CN-3613]]]
+* [[[SCP-CN-3332]]]
+* [[[SCP-CN-3880]]]
+* [[[secure-facility-dossier-sandbox-site-cn|安保设施档案：Sandbox-Site-CN]]]
+* [[[secure-facility-dossier-site-cn-04|安保设施档案：Site-CN-04]]]
+
+[[/div]]
+
++ 实务部门
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Guaitan.svg width="100%"]]
+[[/div]]
+++ 怪谈部
+
+**概述：**怪谈部成立于2002年，最初是一个调查基金会内部传闻与异常潜在联系的非正式部门。该部门在2007年扩编转正成为了一个正式部门，负责制作虚拟都市传说以掩盖真实超自然现象。
+
+怪谈部的任务就是“以怪制怪”，把一件事的真实影响解释为怪异的都市传说。制作过程一般而言有两个要点，一是要避开敏感关键的真实情况，例如涉事异常实际资料描述、参与基金会部门与技术的使用等等，二是结果要尽量不引起足够关注或怀疑，不论是故意设计精良故事还是显得明显粗制滥造，目的都是引开注意力，要是反倒引起了人深入调查到底就适得其反了。
+
+**提及：**
+
+* [[[SCP-CN-2002]]]
+* [[[SCP-CN-2465]]]
+* [[[tong-yong-yan-gai-xie-yi-zhi-nan|《SCP基金会：通用掩盖协议指南》]]]
+* [[[shujia-bigtalk|你们不觉得术加市怪谈有点多得离谱吗？]]]
+* [[[god-s-eyes|碎片怪谈：神所眷顾之人]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Huisubu.svg width="100%"]]
+[[/div]]
+++ 回溯部
+
+**概述：**成立时间不明，由时间异常部发展而来，独立于其他任何单位，直属于基金会最高领导层，拥有一定程度上无视伦理道德委员会的权限。主要职能为对一切时间相关异常的研究和授权，与一般的部门不同，回溯部的所有分部都拥有与本部相同的权限等级。
+
+目前公开的信息为，其总部位于中国西安，分部遍布Site-CN-32、Site-CN-95等数十个站点。部门最高领导者身份、数量、年龄均未公开，唯一能确定的是对现任O5-7直接负责。主要在中国地区活动，并且常年与基金会末日部保持密切联系。
+
+**提及：**
+
+* [[[SCP-CN-2800]]]
+* [[[SCP-CN-3221]]]
+* [[[SCP-CN-4002]]]
+* [[[SCP-CN-4005]]]
+* [[[SCP-CN-4288]]]
+* [[[parallel-retrogression|太阳雨]]]
+* [[[time-is-a-place|黄梅雨纪]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]HRD_Orig.svg width="100%"]]
+[[/div]]
+++ 历史复原部
+
+**概述：**历史复原部是Site-CN-96下设部门之一，负责使用现有资料、实地考察，与时间技术配合，实现对于某历史物品或场景的大致重现。
+
+本部门致力于对异常的溯源与详细考究。可通过异常技术探索历史空白以及异常相关历史，填补缺失记录，归档相关资料。
+
+**提及：**
+
+* [[[SCP-CN-119-J]]]
+* [[[SCP-CN-1426]]]
+* [[[SCP-CN-3159]]]
+* [[[site-cn-96|安保设施档案：Site-CN-96]]]
+* [[[ferrylume-rebirth|归渡]]]
+* [[[yixue238|异学贰叁捌 砚龙]]]
+* [[[yixue901|异学玖零壹 刻舟痕]]]
+[[/div]]
+
+[[div class="panel" style="--_border-color: 20, 20, 20;"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]DoL.svg width="100%"]]
+[[/div]]
+
+++ [[[dol-hub|逻辑部]]]（DoL）
+
+**概述：**逻辑部是一个近年从数学部门独立出来的小型部门，负责研究并收容异常逻辑和不符合常规逻辑的异常，主要负责处置形式逻辑、数理逻辑等类型的项目。部门下属科室众多，而鲜有人知悉该部门的具体职权范围。
+
+在少数人中流传着一个传言，据说逻辑部管控着某些在理念圈中不言自明的底层信念，这也是全体基金会人如此坚定地践行基金会组织理念的原因。
+
+**提及：**
+
+* [[[SCP-CN-1416]]]
+* [[[SCP-CN-1504]]]
+* [[[SCP-CN-1614]]]
+* [[[SCP-CN-1615]]]
+* [[[SCP-CN-2409]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Emo.svg width="100%"]]
+[[/div]]
+++ [[[emotions-and-desire-research-department|情绪本征对策部]]]（情欲部）
+
+**概述：**在原SCP-CN-2600收容对策小组-ε的基础上成立，脱离逻辑部的部分成员所组成的部门，规模很小，雇员不足百人。情欲部专注研究人类的情绪，区别于心理学部的研究范畴，情欲部更关注人类的感性思维、情绪与本能，或是所谓的“潜藏在我们心底的野兽”。
+
+**提及：**
+
+* [[[SCP-CN-2600]]]
+* [[[SCP-CN-2409]]]
+* [[[SCP-CN-3533]]]
+* [[[SCP-CN-3588]]]
+* [[[SCP-CN-3772]]]
+* [[[SCP-CN-3554]]]
+* [[[shisui-sanpian|食髓 三篇]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Shengwuyingjiju.svg width="100%"]]
+[[/div]]
+++ 生物危害应急管理局（生物应急局）
+
+**概述：**Site-CN-507下属部门，负责生物危害类异常的收容与灾害防治工作，也以相关单位名义处理帷幕外的此类异常。由于其独特的专业领域，生物危害应急管理局还负责为其他站点培训处理该类异常的专家。
+
+**提及：**
+
+* [[[SCP-CN-2793]]]
+* [[[SCP-CN-3286]]]
+* [[[SCP-CN-3287]]]
+* [[[SCP-CN-3461]]]
+* [[[SCP-CN-3476]]]
+* [[[Site-cn-507|]]]
+
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Shixuebu.svg width="100%"]]
+[[/div]]
+++ 史学部
+
+**概述：**史学部是一个活跃在基金会中国分部的大型部门，主要研究历史相关异常，并设有考古局进行相关发掘与研究任务。由于中国地区数千年来产生了丰富的文明遗迹，历史与考古相关异常数量很多，史学部的规模也相应地比较庞大。
+
+**提及：**
+
+* [[[all-things-are-one-s-proposal|All things are one的提案]]]
+* [[[SCP-CN-2223]]]
+* [[[SCP-CN-2226]]]
+* [[[SCP-CN-4008]]]
+* [[[archaiologia|基金会异常考古学概论修订第八版节选]]]
+
+[[/div]]
+
+[[div class="panel" style="--_border-color: 31, 79, 161; --_bg-color: 30, 50, 84; --_color: 254, 254, 254; --_link-color: 70, 130, 180;"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]CID_W.svg width="100%"]]
+[[/div]]
+++ [[[criminal-investigation-department-hub|刑事侦察处]]]
+
+**概述：**刑侦处是SCP基金会外勤部的一个下属部门。为了应对日益严峻的涉异常犯罪现状，基金会特别设置了刑事侦察处负责这些案件的侦办。利用异常能力凶杀、抢劫、诈骗、传销甚至破坏帷幕，与基金会合作的公安部门无法独立处理案件时，就会将其移交至刑侦处处理。
+
+**提及：**
+
+* [[[SCP-CN-2783]]]
+* [[[SCP-CN-2784]]]
+* [[[SCP-CN-3731]]]
+* [[[horsing|烈日灼心]]]
+* [[[xianyansuiyu|闲言碎语]]]
+* [[[holy-s-t|层峦叠嶂]]]
+* [[[wgdhqzxy|五更断魂曲：中心页]]]
+[[/div]]
+
+[[div class="panel" style="--_border-color: 96, 30, 30; --_bg-color: 244, 205, 205; --_radius: 0rem;"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Xinxisanju.svg width="100%"]]
+[[/div]]
+++ [[[third-control-and-research-bureau-for-psychic-space-anomalie|心智空间裂隙第三管控与研究局（心隙三局）]]]
+
+**概述：**全称心智空间裂隙管理及研究局，该部门由基金会本部的炼狱空间部独立而来，独立期间与原中华异学会述梦司残党结合。该部门负责处理记忆空间类，数据编辑类，已逝之处等分化下的心智空间相关异常处理与收容研究工作，其在中国分部的主要基地于Site-CN-925。
+
+**提及：**
+
+* [[[SCP-CN-4078]]]
+* [[[SCP-CN-4503]]]
+* [[[SCP-CN-4761]]]
+* [[[SCP-CN-4830]]]
+* [[[SCP-CN-4925]]]
+* [[[SCP-CN-4977]]]
+* [[[froth|浮沫]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Deduction.svg width="100%"]]
+[[/div]]
+++ 演绎部
+
+**概述：**在部分报告中也被认为是超形上学部中国分部。演绎部处理涉及到层状叙事模型与当前现实文字制导有关的话题，或者说该部门处理我们的故事本身。与超形上学部的研究风格不同，演绎部对元叙事本身的结构和性质更感兴趣。
+
+**提及：**
+
+* [[[veleafer-s-proposal|Veleafer的提案]]]
+* [[[SCP-CN-1250]]]
+* [[[SCP-CN-2425]]]
+* [[[the-literature-machine-and-the-dinosaur|文学机器与恐龙]]]
+* [[[thanos|演绎部的一天]]]
+* [[[infassandboxcn|Infas的沙盒页]]]
+[[/div]]
+
+[[div class="panel" style="--_border-color: 66, 66, 72; --_bg-color: 235, 235, 237; --_radius: 0;"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]ARED.svg width="100%"]]
+[[/div]]
+++ [[[ared-hub|异常宗教表现部]]]（ARED）
+
+**概述：**起源于基金会诞生早期的美国分部，后来逐渐将研究重心转移至中国分部的中型研究部门，处理各类异常宗教、民俗、民间信仰相关事务。在中国分部的主要研究基地为Site-CN-97。
+
+与战术神学部等大型宗教相关部门不同，异常宗教表现部对亚伯拉罕宗教等影响力较广且主要部分非异常的宗教兴趣不大。
+
+**提及：**
+
+* [[[SCP-CN-088]]]
+* [[[SCP-CN-2808]]]
+* [[[SCP-CN-2820]]]
+* [[[SCP-CN-2846]]]
+* [[[SCP-CN-2900]]]
+* [[[ccndm|因你而在的故事]]]
+* [[[wo-chao-shan|乌木血山]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Yuanjiaobu.svg width="100%"]]
+[[/div]]
+++ 援助交际部
+
+**概述：**简称援交部，隶属于Site-CN-11。该部门旨在利用低危异常为站内员工提供福利、与其他站点和GoI交易有益的异常，以及通过取悦有智能的异常以减少收容成本或令其为基金会所用。
+
+**提及：**
+
+* [[[SCP-CN-2651]]]
+* [[[SCP-CN-2788]]]
+* [[[SCP-CN-2959]]]
+* [[[SCP-CN-3400]]]
+* [[[makelovewithmonstergirl-1|MTF-甲子-69“青楼怪人” 行动记录-1-蝓水之欢 （他们来自援交部）]]]
+* [[[11shitang|11站食堂墙上的一则广告]]]
+* [[[shuzhao-11weisheng|11站宿舍管理办法]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Zhengmingbu_2.svg width="100%"]]
+[[/div]]
+++ 证明部
+
+**概述：**又称“存在性论证机关”“原初之鸟”。该部门始建于1981年，其职能为通过各种方式证明我们的世界是真实的，而不是一戳即破的气泡。这种论证保证了我们的现实不会突然崩溃，而证明部的存在本身亦是证明之一。只要证明部依然在持续证明，我们身边的一切就是确定存在的，我们的现实就是稳定的。
+
+证明部领导者是Dr. Prime Bird，总以身穿黑色风衣、戴黑色鸟嘴面具的形象出现。
+
+**提及：**
+
+* [[[SCP-CN-313]]]
+* [[[SCP-CN-991]]]
+* [[[SCP-CN-2102]]]
+* [[[SCP-CN-2989]]]
+* [[[SCP-CN-4300]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]CAPRICA.svg width="100%"]]
+[[/div]]
+++ 中国高权限化学分析研究所（CAPRICA）
+
+**概述：**又称“摩羯座实验室”。名义上直属于监督者议会（而不从属于基金会科学部）的研究机构，实际上由十二生肖议会代管，负责基金会内部一些高保密等级的重要化学和生物学研究项目。于1980年在时任O5-6的强烈建议下于中国成立，曾负责过的重要项目包括记忆删除药剂Y-909的组分分析和结构测定、非碳基生命研究等。在位于新疆的Area-CN-07和位于上海的Site-CN-100分别设有实验室。
+
+**提及：**
+
+* [[[re-spectator-s-proposal|Re_spectators的提案]]]
+* [[[SCP-CN-1827]]]
+* [[[SCP-CN-2335]]]
+* [[[SCP-CN-1868]]]
+* [[[SCP-CN-4000-EX]]]
+[[/div]]
+
+[[div style="height: 10rem;"]]
+[[/div]]
+
+[[div class="panel"]]
+[[collapsible show="+ 请求添加一个新部门？" hide="- 收起提示"]]
+
+此页面由[[*user dr hormress]]、[[*user rye travis]]整理，并由Dr Hormress维护。若需要向其中添加一个新部门，可以向Dr Hormress提供以下资料：
+
+* 需要展示在此页面的5~7篇合格文章链接（必要）
+* 部门的名称与外文缩写（可选）
+* 部门相关页面（中心页、故事中心、相关站点页）链接（可选）
+* 部门的概述（可选）
+* 部门徽标（可选）
+
+目前，此页面收录被至少5个非中心页性质的合格页面提及的原创部门，且为避免内容过长，每个部门展示5~7篇相关文章。Dr Hormress会为每个收录的部门绘制一版风格统一的矢量徽标，这一徽标可能是现有部门徽标的二次创作或原创设计；若该部门已有矢量版徽标，则可能只进行模板适配，基本保留原有设计。维护者保留对一个部门是否收录，与具体收录内容的判断权利。
+
+若您维护的部门设定被此页面收录，而您希望更改此页面上展示的内容（包括概述内容、提及文章链接），请联系Dr Hormress。
+
+为确保内容质量和秩序，请不要自主修改这个页面，谢谢！
+
+[[/collapsible]]
+[[/div]]
+
+[[footnoteblock]]
+
+[[/div]]

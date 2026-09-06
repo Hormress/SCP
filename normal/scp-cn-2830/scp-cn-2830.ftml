@@ -2,12 +2,519 @@
 site: ah-sandbox
 page: scp-cn-2830
 title: SCP-CN-283𖣐
-revision: 6
+revision: 210
 ---
-[[include :scp-wiki-cn:theme:parallel]]
+[[include :scp-wiki-cn:theme:parallel redstone=*]]
+[[include :ah-sandbox:component:noto-sans-scs]]
 
 [[module CSS]]
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bamum:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url("https://fontsapi.zeoseven.com/240/main/result.css");
+@import url("https://fontsapi.zeoseven.com/240/w40/result.css");
+@import url("https://fontsapi.zeoseven.com/14/main/result.css");
+
+:root {
+    --main-logo: url("https://hormress.github.io/SCP/normal/scp-cn-2830/Enkan.svg");
+    --banner-bg: url("https://hormress.github.io/SCP/normal/scp-cn-2830/Aurora.jpg");
+    --banner-fg: url("https://hormress.github.io/SCP/normal/scp-cn-2830/Aurora.png");
+    --header-logo-mask: none;
+    --header-logo-right-margin: 0rem;
+
+    --body-font: "Noto Sans SCS", "Inter", "Noto Sans SC", sans-serif;
+    --jp-font: "Noto Sans SCS", "Inter", "Noto Sans JP", sans-serif;
+    --latin-font: "Inter", "Noto Sans SC", sans-serif;
+
+    --top-bar-link-color: var(--basalt-main-text-color);
+    --header-color-one: var(--basalt-secondary-color);
+    --header-color-two: var(--basalt-secondary-color);
+
+    --set-safari-mode-disabled: set;
+
+    --title-size: 1.25rem;
+    --subtitle-size: 0rem;
+    --user-button-width: 2.25rem;
+    --side-bar-button-width: 2.25rem;
+    --main-content-top-margin: 1.5rem;
+    --main-content-width: 52rem;
+
+    --basalt-undertone: 20, 152, 202;
+ 
+    --basalt-bright-element-color: 20, 165, 227;
+    --basalt-dark-element-color: 20, 124, 172;
+    --basalt-darker-element-color: 50, 152, 171;
+
+    --modal-fader-background-color: 20, 20, 20;
+
+    --_size: 0.5rem;
+    --_clip-path: polygon(var(--_size) -100%, -100% -100%, -100% 200%, 200% 200%, 200% -100%, calc(100% - var(--_size)) -100%, calc(100% - var(--_size)) var(--_size), 200% var(--_size), 200% calc(100% - var(--_size)), calc(100% - var(--_size)) calc(100% - var(--_size)), calc(100% - var(--_size)) 200%, var(--_size) 200%, var(--_size) calc(100% - var(--_size)), -100% calc(100% - var(--_size)), -100% var(--_size), var(--_size) var(--_size));
+}
+
+div#header h1 a span::after {
+    margin-bottom: 0;
+}
+
+div#header {
+    opacity: 0;
+    pointer-events: none;
+    background-image: none;
+    background-color: rgb(var(--basalt-primary-color));
+    box-shadow: unset;
+    transition: opacity ease 0.25s;
+}
+
+#side-bar::before,
+#side-bar::after {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity ease 0.25s, height var(--side-bar-transition), background-color var(--side-bar-transition);
+}
+
+#login-status span.printuser > a,
+#search-top-box-form input[type="submit"] {
+    pointer-events: none;
+}
+
+:root:has(div.nav-switch):not(:has(div.nav-switch div.collapsible-block-unfolded[style*="none"])) div#header,
+:root:has(div.nav-switch):not(:has(div.nav-switch div.collapsible-block-unfolded[style*="none"])) #side-bar::before,
+:root:has(div.nav-switch):not(:has(div.nav-switch div.collapsible-block-unfolded[style*="none"])) #side-bar::after,
+:root:has(div.nav-switch):not(:has(div.nav-switch div.collapsible-block-unfolded[style*="none"])) #login-status span.printuser > a,
+:root:has(div.nav-switch):not(:has(div.nav-switch div.collapsible-block-unfolded[style*="none"])) #search-top-box-form input[type="submit"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+div.nav-switch {
+    position: fixed;
+    top: calc(var(--header-final-height) + 0.25rem);
+    right: 0.25rem;
+    transition: top ease 0.125s;
+    z-index: 1;
+}
+
+div.nav-switch a.collapsible-block-link {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    text-align: center;
+    line-height: 1.75rem;
+    font-weight: 900;
+    font-family: var(--latin-font);
+    transition: background-color ease 0.125s;
+}
+
+div.nav-switch a.collapsible-block-link:is(:hover, :focus) {
+    background-color: rgb(var(--basalt-tertiary-color));
+    text-decoration: none;
+}
+
+/* 页面布局 */
+
+div#main-content {
+    width: auto;
+    max-width: 100%;
+    margin: calc(-1 * var(--header-final-height)) 0 0;
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        5%, transparent 20% 80%, 95%,
+        rgb(0, 0, 0)
+    );
+}
+
+div#page-title {
+    display: none;
+}
+
+div#page-title,
+div.meta-title {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: "Noto Serif SC", serif;
+}
+
+div#page-options-container,
+div#action-area {
+    width: var(--main-content-width);
+    margin: 0 auto var(--main-content-bottom-margin);
+    max-width: calc(100% - var(--main-content-side-margin) *2);
+}
+
+div#page-content,
+div.credit {
+    line-height: 1.75;
+    text-align: justify;
+    text-justify: inter-character;
+    /* text-wrap: pretty; */
+    justify-align: both;
+}
+
+div#page-content + div.page-tags {
+    width: var(--main-content-width);
+    margin: 0 auto;
+}
+
+div#page-info-break {
+    height: 25dvh;
+}
+
+/* 页面内容元素 */
+
+div#u-credit-view .modalbox > div.credit {
+    margin: 0;
+    padding: 0 1.25rem;
+}
+
+div#page-content div.rate-box {
+    position: sticky;
+    height: 2rem;
+    width: max-content;
+    margin-inline: auto 0.25rem;
+    top: calc(100dvh - 2.25rem);
+    align-content: end;
+    z-index: 1;
+}
+
+div#page-content div.rate-box div.page-rate-widget-box {
+    margin-block: 0;
+}
+
+iframe.music {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: invert(1) hue-rotate(180deg);
+    clip-path: polygon(10px 10px, calc(100% - 10px) 10px, calc(100% - 10px) calc(100% - 10px), 10px calc(100% - 10px));
+    -webkit-clip-path: polygon(10px 10px, calc(100% - 10px) 10px, calc(100% - 10px) calc(100% - 10px), 10px calc(100% - 10px));
+}
+
+p:has(> iframe.music) {
+    display: block;
+    position: relative;
+    width: max(80%, 16rem);
+    height: 86px;
+    margin: 0 auto;
+}
+
+p:has(> iframe.music)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 66px;
+    height: 66px;
+    backdrop-filter: invert(1) hue-rotate(180deg);
+    pointer-events: none;
+    z-index: 1;
+}
+
+div.normal-content {
+    width: var(--main-content-width);
+    max-width: calc(100% - var(--main-content-side-margin) * 2) !important;
+    margin-inline: auto;
+}
+
+div.banner ~ div.normal-content:nth-of-type(1) {
+    z-index: 2;
+}
+
+div.banner {
+    position: relative;
+    --_si: min(max(50dvw, 16rem), 50dvh);
+    --_mask: linear-gradient(to bottom, black 0%, black calc(50dvh + var(--_si)), calc(50dvh + 1.65 * var(--_si)), transparent calc(50dvh + 2 * var(--_si)));
+    height: calc(50dvh + 3 * var(--_si));
+    margin-bottom: -50dvh;
+    pointer-events: none;
+    mask-image: var(--_mask);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: top;
+    -webkit-mask-image: var(--_mask);
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: top;
+    background-image: var(--banner-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+div.banner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: var(--banner-fg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.banner div.anchor {
+    position: sticky;
+    top: 50dvh;
+}
+
+div.banner div.anchor::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 100%;
+    height: max(100dvw, 32rem);
+    transform: translate(-50%, -50%);
+    background-image: var(--main-logo);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.banner div.anchor::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 100%;
+    height: 100dvh;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(
+        circle at center in hsl shorter hue,
+        rgb(144, 72, 204, 0.2),
+        rgb(20, 0, 204, 0.2),
+        rgb(0, 24, 72, 0.4),
+        rgb(20, 0, 0, 0.2),
+        rgb(0, 0, 20, 0)
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+div.section {
+    position: relative;
+    width: max-content;
+    margin: 5rem auto 0.5rem;
+    padding: 0.8rem 1rem;
+}
+
+div.section.quad.i,
+div.section.quad.ii {
+    padding-top: 0.5rem;
+}
+
+div.section.quad.iii,
+div.section.quad.iv {
+    padding-bottom: 0.5rem;
+}
+
+div.section.quad::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0.25rem;
+    top: 0;
+    width: 0.1rem;
+    height: 100%;
+    background-image: linear-gradient(
+        to top,
+        rgb(var(--basalt-main-text-color), 0.8),
+        80%,
+        rgb(var(--basalt-main-text-color), 0)
+    );
+}
+
+div.section.quad::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0;
+    height: 0.1rem;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgb(var(--basalt-main-text-color), 0.8),
+        80%,
+        rgb(var(--basalt-main-text-color), 0)
+    );
+}
+
+div.section.quad.ii::before,
+div.section.quad.iii::before {
+    left: unset;
+    right: 0.25rem;
+}
+
+div.section.quad.iii::before,
+div.section.quad.iv::before {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(var(--basalt-main-text-color), 0.8),
+        80%,
+        rgb(var(--basalt-main-text-color), 0)
+    );
+}
+
+div.section.quad.iii::after,
+div.section.quad.iv::after {
+    bottom: unset;
+    top: 0.25rem;
+}
+
+div.section.quad.ii::after,
+div.section.quad.iii::after {
+    background-image: linear-gradient(
+        to left,
+        rgb(var(--basalt-main-text-color), 0.8),
+        80%,
+        rgb(var(--basalt-main-text-color), 0)
+    );
+}
+
+div.section.rasen::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border-inline: solid 0.1rem rgb(var(--basalt-main-text-color), 0.8);
+    transform: translate(-50%, -50%) skewX(10deg) skewY(10deg);
+    pointer-events: none;
+    z-index: -1;
+}
+
+div.section.rasen::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border-inline: solid 0.1rem rgb(var(--basalt-main-text-color), 0.8);
+    transform: translate(-50%, -50%) skewX(-45deg) skewY(-45deg);
+    pointer-events: none;
+    z-index: -1;
+}
+
+div.section h1,
+div.subsection h1 {
+    text-align: center;
+    letter-spacing: 0.15em;
+    font-family: "XiangcuiChaoxisongW15";
+    font-weight: 400;
+}
+
+div.section h1::first-letter,
+div.subsection h1::first-letter {
+    margin-left: 0.075em;
+}
+
+div.section h1 {
+    margin-block: 0;
+    font-size: 2.25em;
+}
+
+div.section h2 {
+    margin-block: 0;
+    font-size: 1.25em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: "LXGW ZhiSong CL";
+    font-weight: 400;
+}
+
+div.section h2::first-letter {
+    margin-left: 0.1em;
+}
+
+div.subsection h1 {
+    font-size: 1.5em;
+}
+
+div.blockquote.ac {
+    position: relative;
+}
+
+div.blockquote.ac::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    border: solid var(--thin-border-width) rgb(var(--basalt-dark-element-color));
+    clip-path: var(--_clip-path);
+    -webkit-clip-path: var(--_clip-path);
+}
+
+div.fin {
+    position: relative;
+    width: 0;
+    height: 2.5rem;
+    margin: 0 15rem 0.25rem auto;
+    text-align: right;
+}
+
+div.fin p {
+    position: absolute;
+    width: max-content;
+    left: 50%;
+    top: 50%;
+    font-size: 2.5em;
+    font-family: "Monsieur La Doulaise";
+    transform: translate(-50%, -50%);
+    margin-block: 0;
+}
+
+/* TEST用 */
+
+a.newpage {
+    color: inherit;
+}
+
+.latin {
+    font-family: var(--latin-font);
+}
+
+.jp {
+    text-align: center;
+    font-family: var(--jp-font);
+}
+
+.jp span.rt {
+    font-size: .5em;
+    user-select: none;
+}
+
+span.ruby {
+    vertical-align: baseline;
+}
+
+span.rt {
+    display: block;
+    margin-top: -3em;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+span.bt {
+    font-weight: bold;
+    color: rgb(var(--basalt-undertone));
+}
 
 span.spin {
     display: inline-block;
@@ -26,6 +533,107 @@ span.spin {
 }
 [[/module]]
 
+[[div class="banner"]]
+[[div class="anchor"]]
+[[/div]]
+[[/div]]
+
+[[div class="nav-switch"]]
+[[collapsible show="···" hide="···"]]
+[[/collapsible]]
+[[/div]]
+
+[[div class="rate-box"]]
+[[include :scp-wiki-cn:component:credit top=--]]
+
+[[=]]
+[[include :scp-wiki-cn:fragment:hormress]]
+[[/=]]
+
+[[iframe https://music.163.com/outchain/player?type=2&id=3319968438&auto=1&height=66 class="music"]]
+
+[[div class="jp" style="font-size: 1.2em;"]]
+[[span class="ruby"]]青[[span class="rt"]]あお[[/span]][[/span]]か[[span class="ruby"]]藍[[span class="rt"]]あい[[/span]][[/span]]かなんて　[[span class="ruby"]]十[[span class="rt"]]じゅう[[/span]][[/span]][[span class="ruby"]]人[[span class="rt"]]にん[[/span]][[/span]][[span class="ruby"]]十[[span class="rt"]]と[[/span]][[/span]][[span class="ruby"]]色[[span class="rt"]]いろ[[/span]][[/span]]で[[span class="ruby"]]不[[span class="rt"]]ふ[[/span]][[/span]][[span class="ruby"]]完[[span class="rt"]]かん[[/span]][[/span]][[span class="ruby"]]全[[span class="rt"]]ぜん[[/span]][[/span]]
+[[span class="ruby"]]正[[span class="rt"]]せい[[/span]][[/span]][[span class="ruby"]]解[[span class="rt"]]かい[[/span]][[/span]]なんて[[span class="ruby"]]大[[span class="rt"]]たい[[/span]][[/span]][[span class="ruby"]]抵[[span class="rt"]]てい[[/span]][[/span]]が　[[span class="ruby"]]仮[[span class="rt"]]かり[[/span]][[/span]][[span class="ruby"]]初[[span class="rt"]]そめ[[/span]][[/span]]の[[span class="ruby"]]幻[[span class="rt"]]げん[[/span]][[/span]][[span class="ruby"]]想[[span class="rt"]]そう[[/span]][[/span]]
+[[span class="ruby"]]常識[[span class="rt"]]ルール[[/span]][[/span]]ってDress code[[span class="ruby"]]脱[[span class="rt"]]ぬ[[/span]][[/span]]いで　さぁ[[span class="ruby"]]衝[[span class="rt"]]しょう[[/span]][[/span]][[span class="ruby"]]動[[span class="rt"]]どう[[/span]][[/span]]をUnlock
+[[span class="ruby"]]想[[span class="rt"]]そう[[/span]][[/span]][[span class="ruby"]]像[[span class="rt"]]ぞう[[/span]][[/span]]の[[span class="ruby"]]先[[span class="rt"]]さき[[/span]][[/span]]で　[[span class="ruby"]]何[[span class="rt"]]なに[[/span]][[/span]]が[[span class="ruby"]]見[[span class="rt"]]み[[/span]][[/span]]たい？ 
+[[/div]]
+
+传奇制作人[[span class="jp"]]高山祐介[[/span]]曾经说过：“我认为只有在能唤起观者的情感，像是‘应该作何感想？’这样的时候，作品才具有意义。”^^1^^
+
+现在在SCP基金会写作时，我会有意地确保一篇独立作品没有任何“必须阅读”的前置作品：假定这是读者阅读的第一篇SCP，并让他看懂故事本身。当然，像[[[SCP-2000]]]、[[[SCP-055]]]之类底层设定级别的交叉引用总会存在，对于没有任何背景知识的读者而言，一句“克隆人类对抗末日的大机器”、“无法被记住的非圆物体，和[[[SCP-579|另一个东西]]]合二为一可以重启宇宙”通常也能解决问题。不过[[span class="jp"]]高山[[/span]]先生为了“唤起观者的情感”，做了一件完全相反的事情：观者无论有多少背景知识，都看不懂他的作品。
+
+说到这里，大部分读者大概会纷纷惊呼：[[span class="jp"]]高山祐介[[/span]]是谁？
+
+[[span class="jp"]]高山祐介[[/span]]，早稻田大学文科毕业，2015年入职万代南梦宫娱乐，2017年开始担任多媒体企划《[[span class="ruby"]]偶像大师 闪耀色彩[[span class="rt jp"]]アイドルマスター シャイニーカラーズ[[/span]][[/span]]》制作人，前健美社团成员，拥有健美的胸肌，曾在一个访谈节目中展示并接受了主持人的亲吻。
+
+[[div style="font-size: 85%;"]]
+----
+1　[[span class="jp"]]受け手が作品に触れた際に「どう思ったか」という感情が湧き立つことではじめて、作品は意味を持ってくると考えています。[[/span]]（[[a href="https://www.famitsu.com/article/202605/75738"]][[span class="jp"]]ファミ通.com[[/span]]访谈[[/a]]）
+[[/div]]
+
+[[include :scp-wiki-cn:component:credit end=--]]
+[[/div]]
+
+[[div class="normal-content"]]
+
+[[div class="subsection"]]
++ 特殊收容措施
+[[/div]]
+
+[[div class="blockquote w-full ac"]]
+
+故事需要有意义吗？
+
+我不会回答这个问题。我会告诉你，无论是[[[SCP-CN-3000|有意义的故事]]]还是[[[SCP-CN-3193|没有意义的故事]]]，故事需要一个开端。毫无来由的，依据充分的，空洞乏味的，意蕴深长的，肆意挥洒的，精心雕琢的，当下的，回忆的，良善的，险恶的，喜悦的，忧愁的，偶然发现的，命中注定的，简约干净的，交错粘稠的，你的，我的故事的开端，无论表现成怎样的形态，无论怎样被截断，完整或是不完整，永远是一个开端。正如你——二十秒之前？三十秒之前？或者，如果你真的仔细阅读过那些我用来修饰“开端”的短语，四十秒之前？你在片刻之前读到，也许已经忘记的问题：故事需要有意义吗？那好像也是一个引发议论的不错的开端。
+
+当你翻开一本书，“奔流之河”四个字直挺挺躺在最前面，你感到一点诧异，又很快发现英文原文是“riverrun”。这暂时没有太多意义，但当你发现这本书的最后一个词是“The”时，一切好像连在一起——开头的那条河原来从结尾处倾泻而下。或许你会告诉我，这正是一个没有开端的故事，开头和结尾完成了自我镶嵌，循环往复。
+
+但你仍然选择了一个开端。你从时刻 [[$t_1$]] 开始阅读，经过 [[$\Delta t$]]，你在 [[$t_2$]] 抬起头，拿起你放在手边的水壶，抿上一小口。你觉得 [[$t_1$]] 的取值是任意的，就像你可以随意从中间翻开一本辞典，开始阅读右边那页上的最后一个条目，但 [[$t_1$]] 总会在那里，就像你在你眼前的空气中找不到任何一个辞典条目，直到你意识到自己还没有翻开那本辞典。
+
+这就是为什么我要断言：宇宙不允许没有开端的故事。
+
+[[/div]]
+
+[[div class="blockquote w-full ac"]]
+
+以上这些说辞并不总是成立。
+
+亚里士多德也曾断言“大自然厌恶真空”，如今我们理解的真空却占据了宇宙的大部分空间。如今我们的文字无法写下没有开端的故事，我们的大脑无法理解没有开端的思想，但或许我们写下的文字、我们脑中的想法，都只是故事本身在我们理解中的一个投影；我们依旧无法确定，是否存在一个没有开端的故事。
+
+
+
+[[/div]]
+
+[[div class="section quad i"]]
++ 圆环
+++ 第一象限
+[[/div]]
+
+[[div class="section quad ii"]]
++ 圆环
+++ 第二象限
+[[/div]]
+
+[[div class="section quad iii"]]
++ 圆环
+++ 第三象限
+[[/div]]
+
+[[div class="section quad iv"]]
++ 圆环
+++ 第四象限
+[[/div]]
+
+[[div class="section rasen"]]
+++ 突破界限
++ 螺旋
+[[/div]]
+
+
+[!--
+自从[[span class="bt"]]事件-282[[/span]]以来，我们所处的时空不可定向，类时曲线扭转相接构成莫比乌斯带，时间不再具备良定义。光在意识尽头漫漶，
+
 **项目编号：**SCP-CN-283[[span class="spin"]]𖣐[[/span]]
 
 **项目等级：**[[span class="spin"]]𖣐[[/span]]UROBOROS
@@ -33,3 +641,13 @@ span.spin {
 **特殊收容措施：**
 
 **描述：**
+
+> **链接：**[*https://commons.wikimedia.org/wiki/File:Northern_Lights_Over_the_Tetons_-_6_(53487439861).jpg 见此]
+
+--]
+
+[[/div]]
+
+[[div class="fin"]]
+fin. ~
+[[/div]]
