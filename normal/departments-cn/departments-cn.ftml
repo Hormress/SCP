@@ -1,13 +1,13 @@
 ---
-site: ah-sandbox
-page: collab:departments-cn
+site: scp-wiki-cn
+page: departments-cn
 title: 基金会部门-CN
 tags:
   - 中心
   - 原创
   - 合著
   - 资源
-revision: 154
+revision: 10
 ---
 [[include :scp-wiki-cn:component:sigma-plus]]
 [[include :scp-wiki-cn:component:toggle-sidebar]]
@@ -409,6 +409,23 @@ div.panel div.logo::before {
 * [[[the-literature-machine-and-the-dinosaur|文学机器与恐龙]]]
 * [[[thanos|演绎部的一天]]]
 * [[[infassandboxcn|Infas的沙盒页]]]
+[[/div]]
+
+[[div class="panel"]]
+[[div class="logo"]]
+[[image https://hormress.github.io/SCP/image/logo/department/[D]Suyuan.svg width="100%"]]
+[[/div]]
+++ 异常溯源部
+
+**概述：**在新异常被发现后负责调查其起始来源和形成原理的部门，经常与收容部门协同工作。
+
+**提及：**
+
+* [[[SCP-CN-299]]]
+* [[[SCP-CN-4414]]]
+* [[[SCP-CN-4441]]]
+* [[[fucking-hell|放生🐶🎣你🐴的🐟]]]
+* [[[KICK DOG]]]
 [[/div]]
 
 [[div class="panel" style="--_border-color: 66, 66, 72; --_bg-color: 235, 235, 237; --_radius: 0;"]]
